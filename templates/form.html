@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+    <form action="/dados" method="post">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+        <label for="idade">Idade: </label>
+        <input for="number" name="idade" id="idade">
+        <label for="">Disciplina: </label>
+        <input type="checkbox" name="Disciplina" id="Web" value="Web">
+        <label for="Web">Web</label>
+        <input type="checkbox" name="Disciplina" id="LpII" value="LpII">
+        <label for="LpII">LpII</label>
+        <input type="checkbox" name="Disciplina" id="LlpII" value="LlpII">
+        <label for="LlpII">LlpII</label>
+        <input type="checkbox" name="Disciplina" id="EstDados" value="EstDados">
+        <label for="EstDados">EstDados</label>
+        <button type="submit">Enviar</button>
+    </form>
+{% endblock %}
