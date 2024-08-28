@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+    
+    <a href="/Pedidos/add">+Adicionar</a>
+    <table>
+        <tr>
+            <th>Data do Pedido</th>
+            <th>Valor total do pedido</th>
+            <th>Status do pedido</th>
+        </tr>
+        {% for pedidos in dados %}
+
+        <tr>
+            <td>{{Pedidos.data_pedido}}</td>
+            <td>{{Pedidos.valor_total}}</td>
+            <td>{{Pedidos.status}}</td>
+        </tr>
+
+        {% endfor %}
+    </table>
+
+{% endblock %}
